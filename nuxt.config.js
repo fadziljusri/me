@@ -12,7 +12,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: "Wedding Invitation Website (Wedvite)" },
-      { name: 'keywords', content: 'Fadzil Jusri, fadziljusri, software developer, freelancer, portfolio, Universiti Teknologi PETRONAS, ' + cfg.name },
+      { name: 'keywords', content: 'Fadzil Jusri, fadziljusri, software developer, freelancer, portfolio, Universiti Teknologi PETRONAS, ' + pkg.description },
       { name: 'author', content: 'Fadzil Jusri' }
     ],
     link: [
