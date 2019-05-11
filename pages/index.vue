@@ -9,6 +9,14 @@
 </template>
 
 <script>
+// import Vue from 'vue';
+// Vue.prototype.$multiwatch = function (props, watcher) {
+//   var iterator = function(prop) {
+//     this.$watch(prop, watcher);
+//   };
+//   props.forEach(iterator, this);
+// }
+
 import Navbar from "~/components/ui/Navbar";
 import AppHeader from "~/components/ui/Header";
 import AppFooter from "~/components/ui/Footer";

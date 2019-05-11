@@ -11,36 +11,36 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#about">
+        <a class="navbar-item" @click="intoView('about')">
           <span class="icon">
             <fa icon="info"/>
           </span>
           <span>About</span>
         </a>
-        <a class="navbar-item" href="#services">
+        <a class="navbar-item" @click="intoView('services')">
           <span class="icon">
             <fa icon="bars"/>
           </span>
           <span>Services</span>
         </a>
-        <a class="navbar-item" href="#resume">
+        <a class="navbar-item" @click="intoView('resume')">
           <span class="icon">
             <fa icon="file-alt"/>
           </span>
           <span>Resume</span>
         </a>
-        <a class="navbar-item" href="#contact">
+        <!-- <a class="navbar-item" href="#contact">
           <span class="icon">
             <fa icon="envelope"/>
           </span>
           <span>Contact</span>
-        </a>
+        </a>-->
         <!-- <a class="navbar-item" href="#portfolio">
           <span class="icon">
             <fa :icon="['fab','blogger-b']"/>
           </span>
           <span>Blog</span>
-        </a> -->
+        </a>-->
       </div>
     </div>
   </nav>
@@ -68,6 +68,11 @@ export default {
           burger.click();
         });
       });
+    }
+  },
+  methods: {
+    intoView(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     }
   }
 };

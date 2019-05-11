@@ -294,8 +294,8 @@
     </section>
 
     <!-- Resume -->
-    <section class="section" id="resume">
-      <div class="section-heading is-marginless-bottom">
+    <section class="section" ref="resume" id="resume">
+      <div class="section-heading">
         <h3 class="title is-2 has-text-white">Resume</h3>
         <h4 class="subtitle is-5 has-text-light">More about my past</h4>
         <a
@@ -341,15 +341,15 @@
     </nav>
     </section>-->
 
-    <contact-form/>
+    <!-- <contact-form/> -->
   </div>
 </template>
 
 <script>
-import ContactForm from "~/components/ContactForm";
+// import ContactForm from "~/components/ContactForm";
 export default {
   name: "PortfolioContent",
-  components: { ContactForm },
+//   components: { ContactForm },
   computed: {
       years() {
           return (new Date().getFullYear() - 2010) + 1;
