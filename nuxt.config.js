@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
@@ -52,6 +52,10 @@ export default {
         {
           set:'@fortawesome/free-brands-svg-icons',
           icons: ['fab']
+        },
+        {
+          set:'@fortawesome/free-regular-svg-icons',
+          icons: ['far']
         }
       ]
     }]
