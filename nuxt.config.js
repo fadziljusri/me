@@ -11,7 +11,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: "Wedding Invitation Website (Wedvite)" },
+      { name: 'keywords', content: 'Fadzil Jusri, fadziljusri, software developer, freelancer, portfolio, Universiti Teknologi PETRONAS, ' + cfg.name },
+      { name: 'author', content: 'Fadzil Jusri' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
