@@ -1,0 +1,74 @@
+<template>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div ref="burger" class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <fa icon="info"/>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <fa icon="bars"/>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <fa icon="file-alt"/>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <fa icon="envelope"/>
+          </span>
+          <span>Contact</span>
+        </a>
+        <!-- <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <fa :icon="['fab','blogger-b']"/>
+          </span>
+          <span>Blog</span>
+        </a> -->
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "AppNavbar",
+  mounted() {
+    let burger = this.$refs.burger;
+    let menu = document.querySelector("#" + burger.dataset.target);
+    burger.addEventListener("click", function() {
+      burger.classList.toggle("is-active");
+      menu.classList.toggle("is-active");
+    });
+
+    const $navbarItems = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-item"),
+      0
+    );
+    if ($navbarItems.length > 0) {
+      $navbarItems.forEach(el => {
+        el.addEventListener("click", () => {
+          el.removeEventListener("click", function() {});
+          burger.click();
+        });
+      });
+    }
+  }
+};
+</script>
