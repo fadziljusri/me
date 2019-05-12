@@ -35,12 +35,12 @@
           </span>
           <span>Contact</span>
         </a>-->
-        <!-- <a class="navbar-item" href="#portfolio">
+        <a class="navbar-item" href="https://blog.fadzil.me">
           <span class="icon">
             <fa :icon="['fab','blogger-b']"/>
           </span>
           <span>Blog</span>
-        </a>-->
+        </a>
       </div>
     </div>
   </nav>
