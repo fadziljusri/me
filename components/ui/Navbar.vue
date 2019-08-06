@@ -4,7 +4,7 @@
     <div class="navbar-brand">
       <div v-show="showNavBrand" class="navbar-item">
         <fa :icon="['far', 'meh']" class="fa-2x" style="margin-right:0.5rem" />
-        <span class="title is-3 has-text-white">FJ</span>
+        <span class="title is-4 has-text-white">FJ</span>
       </div>
 
       <div ref="burger" class="navbar-burger burger" data-target="navbarExampleTransparentExample">

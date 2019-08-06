@@ -1,10 +1,12 @@
 <template>
   <section class="has-background-dark has-text-white">
-    <navbar/>
-    <app-header/>
-    <app-content/>
+    <no-ssr>
+      <navbar />
+    </no-ssr>
+    <app-header />
+    <app-content />
 
-    <app-footer/>
+    <app-footer />
   </section>
 </template>
 
