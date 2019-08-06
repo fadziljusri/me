@@ -61,26 +61,26 @@
               </figure>
 
               <br>
-              <div class="buttons has-addons is-centered">
+              <div class="buttons is-centered">
                 <a
                   href="https://github.com/fadziljusri/"
                   target="_blank"
-                  class="button is-link is-shadowless"
+                  class="button is-link is-shadowless is-outlined"
                 >Github</a>
                 <a
                   href="https://www.linkedin.com/in/fadziljusri/"
                   target="_blank"
-                  class="button is-link is-shadowless"
+                  class="button is-link is-shadowless is-outlined"
                 >LinkedIn</a>
                 <a
                   href="https://twitter.com/fadziljusri/"
                   target="_blank"
-                  class="button is-link is-shadowless"
+                  class="button is-link is-shadowless is-outlined"
                 >Twitter</a>
                 <a
                   href="https://codetrace.com/users/fadziljusri"
                   target="_blank"
-                  class="button is-link is-shadowless"
+                  class="button is-link is-shadowless is-outlined"
                 >CodeTrace</a>
               </div>
             </div>
@@ -372,7 +372,7 @@ section.section {
 }
 
 .image img {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .content.skills .media {
