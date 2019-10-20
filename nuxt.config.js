@@ -49,15 +49,15 @@ export default {
       imports: [
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['fas']
+          icons: ['faInfo', 'faBars', 'faFileAlt', 'faCode', 'faEnvelope', 'faExternalLinkAlt', 'faMapMarkerAlt', 'faPhone'] // fas
         },
         {
           set:'@fortawesome/free-brands-svg-icons',
-          icons: ['fab']
+          icons: ['faBloggerB' , 'faGithub', 'faLinkedin', 'faTwitter'] // fab
         },
         {
           set:'@fortawesome/free-regular-svg-icons',
-          icons: ['far']
+          icons: ['faMeh'] // far
         }
       ]
     }]

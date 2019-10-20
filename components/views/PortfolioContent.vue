@@ -5,7 +5,7 @@
       <!-- Title -->
       <div class="section-heading">
         <h3 class="title is-2 has-text-white">About Me</h3>
-        <h4 class="subtitle is-5 has-text-light">"IT Geek"</h4>
+        <!-- <h4 class="subtitle is-5 has-text-light">"IT Geek"</h4> -->
         <p>
           IT geek with more than
           <strong class="has-text-warning">
@@ -24,7 +24,7 @@
       <div class="columns is-tablet has-same-height is-gapless">
         <div class="column">
           <!-- Profile -->
-          <div class="card">
+          <div class="card profile">
             <div class="card-content">
               <h3 class="title is-4">Profile</h3>
 
@@ -36,18 +36,20 @@
                       <th colspan="2"></th>
                     </tr>
                     <tr>
-                      <td>Address</td>
-                      <td>Kuala Lumpur, Malaysia</td>
-                    </tr>
-                    <tr>
-                      <td>Phone</td>
                       <td>
-                        <a href="tel:+6010-6505576">6010-6505576</a>
+                        <fa icon="map-marker-alt" style="margin-right:10px;" />
+                        <span>Kuala Lumpur, Malaysia</span>
                       </td>
                     </tr>
                     <tr>
-                      <td>Email</td>
                       <td>
+                        <fa icon="phone" style="margin-right:10px;" />
+                        <a href="tel:+6010-6505576">+6010-650-5576</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <fa icon="envelope" style="margin-right:10px;" />
                         <a
                           href="mailto:fadziljusri@gmail.com?Subject=Hi%20Fadzil"
                         >fadziljusri@gmail.com</a>
@@ -57,39 +59,19 @@
                 </table>
               </div>
               <figure class="image is-3by2">
-                <img src="~assets/me.jpg">
+                <img src="~assets/me.jpg" />
               </figure>
 
-              <br>
-              <div class="buttons is-centered">
-                <a
-                  href="https://github.com/fadziljusri/"
-                  target="_blank"
-                  class="button is-link is-shadowless is-outlined"
-                >Github</a>
-                <a
-                  href="https://www.linkedin.com/in/fadziljusri/"
-                  target="_blank"
-                  class="button is-link is-shadowless is-outlined"
-                >LinkedIn</a>
-                <a
-                  href="https://twitter.com/fadziljusri/"
-                  target="_blank"
-                  class="button is-link is-shadowless is-outlined"
-                >Twitter</a>
-                <a
-                  href="https://codetrace.com/users/fadziljusri"
-                  target="_blank"
-                  class="button is-link is-shadowless is-outlined"
-                >CodeTrace</a>
-              </div>
+              <br />
+              
+              <social/>
             </div>
           </div>
         </div>
 
         <div class="column">
           <!-- Skills -->
-          <div class="card">
+          <div class="card skills">
             <div class="card-content skills-content">
               <h3 class="title is-4">Skills</h3>
               <div class="content skills">
@@ -98,7 +80,7 @@
                     <div class="content">
                       <p>
                         <strong>JavaScript</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="80" max="100"></progress>
                       </p>
                     </div>
@@ -110,7 +92,7 @@
                     <div class="content">
                       <p>
                         <strong>Flask</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
                       </p>
                     </div>
@@ -122,7 +104,7 @@
                     <div class="content">
                       <p>
                         <strong>Nuxt &amp; Vue.js</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
                       </p>
                     </div>
@@ -134,7 +116,7 @@
                     <div class="content">
                       <p>
                         <strong>AngularJS / Angular</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
                       </p>
                     </div>
@@ -146,7 +128,7 @@
                     <div class="content">
                       <p>
                         <strong>Ionic (Hybrid Mobile App)</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
                       </p>
                     </div>
@@ -158,7 +140,7 @@
                     <div class="content">
                       <p>
                         <strong>Node.js</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="55" max="100"></progress>
                       </p>
                     </div>
@@ -170,7 +152,7 @@
                     <div class="content">
                       <p>
                         <strong>MongoDB</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="75" max="100"></progress>
                       </p>
                     </div>
@@ -182,7 +164,7 @@
                     <div class="content">
                       <p>
                         <strong>Firestore / Firebase</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="75" max="100"></progress>
                       </p>
                     </div>
@@ -194,7 +176,7 @@
                     <div class="content">
                       <p>
                         <strong>Git</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="80" max="100"></progress>
                       </p>
                     </div>
@@ -206,7 +188,7 @@
                     <div class="content">
                       <p>
                         <strong>Bit src</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
                       </p>
                     </div>
@@ -218,7 +200,7 @@
                     <div class="content">
                       <p>
                         <strong>AWS</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="55" max="100"></progress>
                       </p>
                     </div>
@@ -229,7 +211,7 @@
                     <div class="content">
                       <p>
                         <strong>Bulma</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="65" max="100"></progress>
                       </p>
                     </div>
@@ -241,7 +223,7 @@
                     <div class="content">
                       <p>
                         <strong>Bootstrap</strong>
-                        <br>
+                        <br />
                         <progress class="progress is-success" value="64" max="100"></progress>
                       </p>
                     </div>
@@ -304,9 +286,13 @@
           class="button is-link is-medium is-shadowless"
         >
           <span class="icon">
-              <fa icon="file-alt"/>
+            <fa icon="file-alt" />
           </span>
-          <span>View My Resume</span>
+          <span>View My Resume&nbsp;</span>
+          <fa
+            icon="external-link-alt"
+            style="font-size:0.6rem; top:5px; right:5px; position:absolute;"
+          />
         </a>
       </div>
     </section>
@@ -347,13 +333,14 @@
 
 <script>
 // import ContactForm from "~/components/ContactForm";
+import Social from "~/components/ui/Social";
 export default {
   name: "PortfolioContent",
-//   components: { ContactForm },
+    components: { Social },
   computed: {
-      years() {
-          return (new Date().getFullYear() - 2010) + 1;
-      }
+    years() {
+      return new Date().getFullYear() - 2010 + 1;
+    }
   }
 };
 </script>
@@ -364,10 +351,26 @@ section.section {
   margin: auto;
 }
 
+.card.profile {
+  border-radius: 5px 5px 0 0;
+}
+
+.card.skills {
+  border-radius: 0 0 5px 5px;
+}
+
 @media only screen and (min-width: 769px) {
   .has-same-height .card {
     min-height: 619px;
     overflow: hidden;
+  }
+
+  .card.profile {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .card.skills {
+    border-radius: 0 5px 5px 0;
   }
 }
 
