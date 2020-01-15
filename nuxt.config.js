@@ -1,7 +1,7 @@
 import pkg from './package'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -11,12 +11,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Wedding Invitation Website (Wedvite)" },
-      { name: 'keywords', content: 'Fadzil Jusri, fadziljusri, software developer, freelancer, portfolio, Universiti Teknologi PETRONAS, ' + pkg.description },
+      { hid: 'description', name: 'description', content: "Personal website" },
+      { name: 'keywords', content: 'Fadzil Jusri, fadziljusri, software developer, full-stack developer, freelancer, portfolio, Universiti Teknologi PETRONAS, Malaysia, MY' + pkg.description },
       { name: 'author', content: 'Fadzil Jusri' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Titillium+Web&display=swap' }
     ]
   },
 
@@ -52,12 +53,12 @@ export default {
           icons: ['faInfo', 'faBars', 'faFileAlt', 'faCode', 'faEnvelope', 'faExternalLinkAlt', 'faMapMarkerAlt', 'faPhone'] // fas
         },
         {
-          set:'@fortawesome/free-brands-svg-icons',
-          icons: ['faBloggerB' , 'faGithub', 'faLinkedin', 'faTwitter'] // fab
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faGithub', 'faLinkedin', 'faTwitter'] // fab
         },
         {
-          set:'@fortawesome/free-regular-svg-icons',
-          icons: ['faMeh'] // far
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: ['faMehBlank'] // far
         }
       ]
     }]

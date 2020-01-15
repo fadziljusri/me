@@ -6,7 +6,7 @@
       <div class="section-heading">
         <h3 class="title is-2 has-text-white">About Me</h3>
         <!-- <h4 class="subtitle is-5 has-text-light">"IT Geek"</h4> -->
-        <p>
+        <p style="font-size:1.1em;">
           IT geek with more than
           <strong class="has-text-warning">
             <span>{{years}}</span> years
@@ -63,8 +63,8 @@
               </figure>
 
               <br />
-              
-              <social/>
+
+              <social />
             </div>
           </div>
         </div>
@@ -79,9 +79,21 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong>JavaScript</strong>
+                        <strong>JavaScript / ECMAScript</strong>
                         <br />
                         <progress class="progress is-success" value="80" max="100"></progress>
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="media">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Node.js</strong>
+                        <br />
+                        <progress class="progress is-success" value="55" max="100"></progress>
                       </p>
                     </div>
                   </div>
@@ -103,7 +115,7 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong>Nuxt &amp; Vue.js</strong>
+                        <strong>Nuxt / Vue.js</strong>
                         <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
                       </p>
@@ -127,21 +139,9 @@
                   <div class="media-content">
                     <div class="content">
                       <p>
-                        <strong>Ionic (Hybrid Mobile App)</strong>
+                        <strong>Ionic Mobile Development</strong>
                         <br />
                         <progress class="progress is-success" value="70" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Node.js</strong>
-                        <br />
-                        <progress class="progress is-success" value="55" max="100"></progress>
                       </p>
                     </div>
                   </div>
@@ -201,7 +201,7 @@
                       <p>
                         <strong>AWS</strong>
                         <br />
-                        <progress class="progress is-success" value="55" max="100"></progress>
+                        <progress class="progress is-success" value="40" max="100"></progress>
                       </p>
                     </div>
                   </div>
@@ -251,7 +251,7 @@
     </div>-->
 
     <!-- Services -->
-    <section class="section" id="services">
+    <!-- <section class="section" id="services">
       <div class="section-heading">
         <h3 class="title is-2 has-text-white">Services</h3>
         <h4 class="subtitle is-5 has-text-light">What can I do for you?</h4>
@@ -273,7 +273,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!-- Resume -->
     <section class="section" ref="resume" id="resume">
@@ -336,7 +336,7 @@
 import Social from "~/components/ui/Social";
 export default {
   name: "PortfolioContent",
-    components: { Social },
+  components: { Social },
   computed: {
     years() {
       return new Date().getFullYear() - 2010 + 1;

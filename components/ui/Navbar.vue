@@ -3,7 +3,7 @@
   <nav class="navbar is-link is-fixed-top">
     <div class="navbar-brand">
       <div v-show="showNavBrand" class="navbar-item">
-        <fa :icon="['far', 'meh']" class="fa-2x" style="margin-right:0.5rem" />
+        <fa :icon="['far', 'meh-blank']" class="fa-2x" style="margin-right:0.5rem" />
         <span class="title is-4 has-text-white">Fadzil</span>
       </div>
 
@@ -22,12 +22,12 @@
           </span>
           <span>About</span>
         </a>
-        <a class="navbar-item" @click="intoView('services')">
+        <!-- <a class="navbar-item" @click="intoView('services')">
           <span class="icon">
             <fa icon="bars" />
           </span>
           <span>Services</span>
-        </a>
+        </a>-->
         <a class="navbar-item" @click="intoView('resume')">
           <span class="icon">
             <fa icon="file-alt" />
@@ -41,9 +41,9 @@
           <span>Contact</span>
         </a>-->
         <a class="navbar-item" href="https://blog.fadzil.me">
-          <span class="icon">
+          <!-- <span class="icon">
             <fa :icon="['fab','blogger-b']" />
-          </span>
+          </span> -->
           <span>Blog</span>
         </a>
       </div>

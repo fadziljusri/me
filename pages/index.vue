@@ -34,6 +34,10 @@ export default {
 </script>
 
 <style>
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .is-marginless-bottom {
   margin-bottom: 0 !important;
 }
