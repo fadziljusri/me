@@ -2,10 +2,16 @@
   <!-- Navigation bar -->
   <nav class="navbar is-link is-fixed-top">
     <div class="navbar-brand">
-      <div v-show="showNavBrand" class="navbar-item">
+      <nuxt-link
+        to="/"
+        tag="div"
+        @click.native="changeView()"
+        v-show="showNavBrand"
+        class="navbar-item"
+      >
         <fa :icon="['far', 'meh-blank']" class="fa-2x" style="margin-right:0.5rem" />
         <span class="title is-4 has-text-white">Fadzil</span>
-      </div>
+      </nuxt-link>
 
       <div ref="burger" class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -16,24 +22,24 @@
 
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" @click="intoView('about')">
+        <nuxt-link to="about" tag="a" class="navbar-item" @click.native="changeView()">
           <span class="icon">
             <fa icon="info" />
           </span>
           <span>About</span>
-        </a>
-        <!-- <a class="navbar-item" @click="intoView('services')">
+        </nuxt-link>
+        <!-- <a class="navbar-item" @click.native="changeView()">
           <span class="icon">
             <fa icon="bars" />
           </span>
           <span>Services</span>
         </a>-->
-        <a class="navbar-item" @click="intoView('resume')">
+        <!-- <a class="navbar-item" @click.native="changeView()">
           <span class="icon">
             <fa icon="file-alt" />
           </span>
           <span>Resume</span>
-        </a>
+        </a>-->
         <!-- <a class="navbar-item" href="#contact">
           <span class="icon">
             <fa icon="envelope"/>
@@ -43,7 +49,7 @@
         <a class="navbar-item" href="https://blog.fadzil.me">
           <!-- <span class="icon">
             <fa :icon="['fab','blogger-b']" />
-          </span> -->
+          </span>-->
           <span>Blog</span>
         </a>
       </div>
@@ -52,18 +58,11 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "AppNavbar",
-  data() {
-    return {
-      showNavBrand: window.pageYOffset + 50 > window.innerHeight
-    };
-  },
   created() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    this.$store.commit("SET_PATH", this.$route.path);
   },
   mounted() {
     let burger = this.$refs.burger;
@@ -86,12 +85,15 @@ export default {
       });
     }
   },
+  computed: {
+    ...mapState({
+      path: state => state.path,
+      showNavBrand: state => state.showNavBrand
+    })
+  },
   methods: {
-    intoView(id) {
-      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-    },
-    handleScroll(event) {
-      this.showNavBrand = window.pageYOffset + 50 > window.innerHeight;
+    changeView() {
+      this.$store.commit("SET_PATH", this.$route.path);
     }
   }
 };

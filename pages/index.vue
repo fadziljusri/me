@@ -1,12 +1,12 @@
 <template>
   <section class="has-background-dark has-text-white">
-    <no-ssr>
+    <client-only>
       <navbar />
-    </no-ssr>
-    <app-header />
-    <app-content />
+    </client-only>
 
-    <app-footer />
+    <nuxt-child keep-alive />
+
+    <app-footer v-show="path !== '/'" />
   </section>
 </template>
 
@@ -19,23 +19,26 @@
 //   props.forEach(iterator, this);
 // }
 
+import { mapState } from "vuex";
+
 import Navbar from "~/components/ui/Navbar";
-import AppHeader from "~/components/ui/Header";
 import AppFooter from "~/components/ui/Footer";
-import AppContent from "~/components/views/PortfolioContent";
 export default {
   components: {
     Navbar,
-    AppHeader,
-    AppContent,
     AppFooter
+  },
+  computed: {
+    ...mapState({
+      path: state => state.path
+    })
   }
 };
 </script>
 
 <style>
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .is-marginless-bottom {

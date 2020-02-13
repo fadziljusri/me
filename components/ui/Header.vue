@@ -8,6 +8,15 @@
         <h2 class="subtitle is-3" style="margin-top:1rem;">
           <b>Full-Stack Developer</b> from Malaysia
         </h2>
+
+        <p>
+          <nuxt-link
+            to="/about"
+            tag="a"
+            @click.native="setPath('/about')"
+            class="button is-medium is-default is-outlined"
+          >About</nuxt-link>
+        </p>
       </div>
     </div>
   </section>
@@ -15,6 +24,11 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  methods: {
+    setPath(path) {
+      this.$store.commit("SET_PATH", path);
+    }
+  }
 };
 </script>
