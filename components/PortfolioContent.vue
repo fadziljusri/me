@@ -288,7 +288,7 @@
           <span class="icon">
             <fa icon="file-alt" />
           </span>
-          <span>View My Resume&nbsp;</span>
+          <span style="margin-right:0.5em;">View My “resume.pdf”</span>
           <fa
             icon="external-link-alt"
             style="font-size:0.6rem; top:5px; right:5px; position:absolute;"

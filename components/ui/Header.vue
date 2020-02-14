@@ -14,8 +14,12 @@
             to="/about"
             tag="a"
             @click.native="setPath('/about')"
-            class="button is-medium is-default is-outlined"
-          >About</nuxt-link>
+            class="button is-medium is-default is-outlined has-text-weight-semibold"
+            style="border-radius:13px;"
+          >
+          About
+          <fa icon="angle-double-right" style="margin-left:0.5em"/>
+          </nuxt-link>
         </p>
       </div>
     </div>
