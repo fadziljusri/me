@@ -11,14 +11,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Personal website" },
+      { hid: 'description', name: 'description', content: "Programmer and developer currently living in Kuala Lumpur, Malaysia" },
       { name: 'keywords', content: 'Fadzil Jusri, fadziljusri, software developer, full-stack developer, freelancer, portfolio, Universiti Teknologi PETRONAS, Malaysia, MY' + pkg.description },
       { name: 'author', content: 'Fadzil Jusri' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Titillium+Web&display=swap' }
-    ]
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Titillium+Web&display=swap' },
+    ],
   },
 
   /*
@@ -36,6 +36,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~/plugins/aos", ssr: false }
   ],
 
   /*
@@ -50,7 +51,7 @@ export default {
       imports: [
         {
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['faInfo', 'faBars', 'faFileAlt', 'faCode', 'faEnvelope', 'faExternalLinkAlt', 'faMapMarkerAlt', 'faPhone', 'faAngleDoubleRight'] // fas
+          icons: ['faInfo', 'faBars', 'faFileAlt', 'faCode', 'faEnvelope', 'faExternalLinkAlt', 'faMapMarkerAlt', 'faPhone', 'faChevronCircleRight'] // fas
         },
         {
           set: '@fortawesome/free-brands-svg-icons',

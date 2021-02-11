@@ -1,11 +1,11 @@
 <template>
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top">
-    <div class="navbar-brand">
+  <nav class="navbar is-fixed-top" :class="whichTheme">
+    <div class="navbar-brand" style="cursor: pointer">
       <nuxt-link
         to="/"
         tag="div"
-        @click.native="changeView()"
+        @click.native="changeView(true)"
         v-show="showNavBrand"
         class="navbar-item"
       >
@@ -20,12 +20,12 @@
       </div>
     </div>
 
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div id="navbarExampleTransparentExample" ref="navMenu" class="navbar-menu">
       <div class="navbar-end">
         <nuxt-link to="about" tag="a" class="navbar-item" @click.native="changeView()">
-          <span class="icon">
+          <!-- <span class="icon">
             <fa icon="info" />
-          </span>
+          </span> -->
           <span>About</span>
         </nuxt-link>
         <!-- <a class="navbar-item" @click.native="changeView()">
@@ -46,12 +46,12 @@
           </span>
           <span>Contact</span>
         </a>-->
-        <a class="navbar-item" href="https://blog.fadzil.me">
-          <!-- <span class="icon">
+        <!-- <a class="navbar-item" href="https://blog.fadzil.me">
+          <span class="icon">
             <fa :icon="['fab','blogger-b']" />
-          </span>-->
+          </span>
           <span>Blog</span>
-        </a>
+        </a> -->
       </div>
     </div>
   </nav>
@@ -89,12 +89,26 @@ export default {
     ...mapState({
       path: state => state.path,
       showNavBrand: state => state.showNavBrand
-    })
+    }),
+    whichTheme() {
+      return this.$route.path === '/' ? 'is-link' : 'is-dark';
+    }
   },
   methods: {
-    changeView() {
+    changeView(close) {
+      if (close) {
+        this.$refs.burger.classList.remove('is-active');
+        this.$refs.navMenu.classList.remove('is-active');
+      }
       this.$store.commit("SET_PATH", this.$route.path);
     }
   }
 };
 </script>
+
+<style scoped>
+a.navbar-item:focus {
+  background-color: unset;
+  outline: none;
+}
+</style>

@@ -4,9 +4,9 @@
     <section class="section" id="about">
       <!-- Title -->
       <div class="section-heading">
-        <h3 class="title is-2 has-text-white">About Me</h3>
+        <h3 data-aos="zoom-in" data-aos-duration="600" data-aos-easing="linear" class="title is-2 has-text-white">About Me</h3>
         <!-- <h4 class="subtitle is-5 has-text-light">"IT Geek"</h4> -->
-        <p style="font-size:1.1em;">
+        <p data-aos="zoom-in" data-aos-duration="600" data-aos-easing="linear" style="font-size:1.1em;">
           IT geek with more than
           <strong class="has-text-warning">
             <span>{{years}}</span> years
@@ -21,12 +21,12 @@
         </p>
       </div>
 
-      <div class="columns is-tablet has-same-height is-gapless">
+      <div data-aos="flip-left" data-aos-duration="600" data-aos-easing="linear" id="me-box" class="columns is-tablet is-gapless">
+        <!-- Profile -->
         <div class="column">
-          <!-- Profile -->
           <div class="card profile">
             <div class="card-content">
-              <h3 class="title is-4">Profile</h3>
+              <h3 data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom" class="title is-4">Profile</h3>
 
               <div class="content">
                 <table class="table-profile">
@@ -36,19 +36,19 @@
                       <th colspan="2"></th>
                     </tr>
                     <tr>
-                      <td>
+                      <td data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
                         <fa icon="map-marker-alt" style="margin-right:10px;" />
                         <span>Kuala Lumpur, Malaysia</span>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
                         <fa icon="phone" style="margin-right:10px;" />
-                        <a href="tel:+6010-6505576">+6010-650-5576</a>
+                        <a href="tel:+6010-6505576">+6010-6505576</a>
                       </td>
                     </tr>
                     <tr>
-                      <td>
+                      <td data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
                         <fa icon="envelope" style="margin-right:10px;" />
                         <a
                           href="mailto:fadziljusri@gmail.com?Subject=Hi%20Fadzil"
@@ -58,173 +58,47 @@
                   </tbody>
                 </table>
               </div>
-              <figure class="image is-3by2">
+              <figure data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom" class="image is-3by2">
                 <img src="~assets/me.jpg" />
               </figure>
 
               <br />
 
-              <social />
+              <social data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom"/>
+
+              <div data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom" class="resume">
+                <a
+                  href="https://drive.google.com/file/d/0B74ktrbYaAtobExsWTljZEtZYmM/view"
+                  target="_blank"
+                  class="button is-link is-medium is-shadowless"
+                >
+                  <!-- <span class="icon">
+                    <fa icon="file-alt" />
+                  </span> -->
+                  <span style="margin-right:0.5em;">resume.pdf</span>
+                  <fa
+                    icon="external-link-alt"
+                    style="font-size:0.6rem; top:5px; right:5px; position:absolute;"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Skills -->
         <div class="column">
-          <!-- Skills -->
           <div class="card skills">
             <div class="card-content skills-content">
-              <h3 class="title is-4">Skills</h3>
+              <h3 data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom" class="title is-4">Skills</h3>
               <div class="content skills">
-                <article class="media">
+                <article v-for="(i, index) in skills" :key="index" class="media">
                   <div class="media-content">
                     <div class="content">
-                      <p>
-                        <strong>JavaScript / ECMAScript</strong>
+                      <p data-aos="zoom-in-right" :data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+                        <strong>{{i.label}}</strong>
                         <br />
-                        <progress class="progress is-success" value="80" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Node.js</strong>
-                        <br />
-                        <progress class="progress is-success" value="55" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Flask</strong>
-                        <br />
-                        <progress class="progress is-success" value="70" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Nuxt / Vue.js</strong>
-                        <br />
-                        <progress class="progress is-success" value="70" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>AngularJS / Angular</strong>
-                        <br />
-                        <progress class="progress is-success" value="70" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Ionic Mobile Development</strong>
-                        <br />
-                        <progress class="progress is-success" value="70" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>MongoDB</strong>
-                        <br />
-                        <progress class="progress is-success" value="75" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Firestore / Firebase</strong>
-                        <br />
-                        <progress class="progress is-success" value="75" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Git</strong>
-                        <br />
-                        <progress class="progress is-success" value="80" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Bit src</strong>
-                        <br />
-                        <progress class="progress is-success" value="70" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>AWS</strong>
-                        <br />
-                        <progress class="progress is-success" value="40" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Bulma</strong>
-                        <br />
-                        <progress class="progress is-success" value="65" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Bootstrap</strong>
-                        <br />
-                        <progress class="progress is-success" value="64" max="100"></progress>
+                        <progress class="progress is-success" :value="i.progress" max="100"></progress>
                       </p>
                     </div>
                   </div>
@@ -275,28 +149,6 @@
       </div>
     </section>-->
 
-    <!-- Resume -->
-    <section class="section" ref="resume" id="resume">
-      <div class="section-heading">
-        <h3 class="title is-2 has-text-white">Resume</h3>
-        <h4 class="subtitle is-5 has-text-light">More about my past</h4>
-        <a
-          href="https://drive.google.com/file/d/0B74ktrbYaAtobExsWTljZEtZYmM/view"
-          target="_blank"
-          class="button is-link is-medium is-shadowless"
-        >
-          <span class="icon">
-            <fa icon="file-alt" />
-          </span>
-          <span style="margin-right:0.5em;">View My “resume.pdf”</span>
-          <fa
-            icon="external-link-alt"
-            style="font-size:0.6rem; top:5px; right:5px; position:absolute;"
-          />
-        </a>
-      </div>
-    </section>
-
     <!-- Achievement Level -->
     <!-- <section class="section">
     <nav class="level">
@@ -337,6 +189,68 @@ import Social from "~/components/ui/Social";
 export default {
   name: "PortfolioContent",
   components: { Social },
+  data() {
+    return {
+      skills: [
+        {
+          label: 'JavaScript / ECMAScript',
+          progress: '80'
+        },
+        {
+          label: 'NodeJS / NestJS',
+          progress: '60'
+        },
+        {
+          label: 'Flask',
+          progress: '70'
+        },
+        {
+          label: 'Nuxt / Vue.js',
+          progress: '70'
+        },
+        {
+          label: 'Angular / AngularJS',
+          progress: '70'
+        },
+        {
+          label: 'Ionic Mobile Development',
+          progress: '70'
+        },
+        {
+          label: 'MongoDB',
+          progress: '75'
+        },
+        {
+          label: 'Firestore / Firebase',
+          progress: '75'
+        },
+        {
+          label: 'MySQL',
+          progress: '60'
+        },
+        {
+          label: 'Git',
+          progress: '80'
+        },
+        {
+          label: 'AWS',
+          progress: '30'
+        },
+        {
+          label: 'Tailwindcss',
+          progress: '65'
+        },
+        {
+          label: 'Bulma CSS',
+          progress: '60'
+        },
+        {
+          label: 'Bootstrap 3/4',
+          progress: '55'
+        }
+      ]
+    }
+  },
   computed: {
     years() {
       return new Date().getFullYear() - 2010 + 1;
@@ -351,6 +265,14 @@ section.section {
   margin: auto;
 }
 
+#me-box .column {
+  display: flex;
+}
+
+#me-box .column >.card {
+  width: 100%;
+}
+
 .card.profile {
   border-radius: 5px 5px 0 0;
 }
@@ -359,12 +281,18 @@ section.section {
   border-radius: 0 0 5px 5px;
 }
 
-@media only screen and (min-width: 769px) {
-  .has-same-height .card {
-    min-height: 619px;
-    overflow: hidden;
-  }
+.resume {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
 
+.resume a {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+@media only screen and (min-width: 769px) {
   .card.profile {
     border-radius: 5px 0 0 5px;
   }
@@ -408,7 +336,7 @@ th {
 .section-heading {
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 </style>
 

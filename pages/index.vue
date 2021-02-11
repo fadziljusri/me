@@ -4,7 +4,7 @@
       <navbar />
     </client-only>
 
-    <nuxt-child keep-alive />
+    <nuxt-child />
 
     <app-footer v-show="path !== '/'" />
   </section>

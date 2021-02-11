@@ -1,8 +1,8 @@
 <template>
-  <footer class="footer has-background-light has-text-black has-text-centered">
+  <footer class="footer has-background-dark has-text-white has-text-centered">
     <div class="section-heading is-marginless">
       <p>
-        <strong>&copy;</strong> fadziljusri, 2018
+        <strong>&copy;</strong> &copy; fadziljusri 2018
       </p>
     </div>
   </footer>
