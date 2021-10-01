@@ -1,6 +1,6 @@
-# me
+# [fadziljusri.com](https://fadziljusri.com/)
 
-> Personal website
+> Personal website - Programmer and developer currently living in Kuala Lumpur, Malaysia
 
 ## Build Setup
 

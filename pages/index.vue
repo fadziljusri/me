@@ -6,7 +6,7 @@
 
     <nuxt-child />
 
-    <app-footer v-show="path !== '/'" />
+    <app-footer v-show="hasFooter" />
   </section>
 </template>
 
@@ -19,8 +19,6 @@
 //   props.forEach(iterator, this);
 // }
 
-import { mapState } from "vuex";
-
 import Navbar from "~/components/ui/Navbar";
 import AppFooter from "~/components/ui/Footer";
 export default {
@@ -29,9 +27,9 @@ export default {
     AppFooter
   },
   computed: {
-    ...mapState({
-      path: state => state.path
-    })
+    hasFooter() {
+      return this.$route.path !== '/';
+    }
   }
 };
 </script>

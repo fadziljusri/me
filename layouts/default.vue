@@ -52,4 +52,12 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.section {
+  max-width: 920px;
+  margin-top: 52px !important; /* navbar */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+}
 </style>

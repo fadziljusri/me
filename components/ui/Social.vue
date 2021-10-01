@@ -14,13 +14,13 @@
     >
       <fa :icon="['fab', 'linkedin']" class="fa-2x" />
     </a>
-    <a
+    <!-- <a
       href="https://twitter.com/fadziljusri/"
       target="_blank"
       class="button twitter is-text is-shadowless"
     >
       <fa :icon="['fab', 'twitter']" class="fa-2x" />
-    </a>
+    </a> -->
     <a
       href="https://codetrace.com/users/fadziljusri"
       target="_blank"
